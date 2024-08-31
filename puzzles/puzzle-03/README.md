@@ -7,7 +7,7 @@ _* **bink** *_
 You look down at a new email from user _anon555@gmail.com_ with the subject:
 `Plz, I need your help`.
 
-Against all security-minded insticts, you open the email...
+Against all security-minded instincts, you open the email...
 
 ```
 Author: anon555@gmail.com<anon555@gmail.com>
