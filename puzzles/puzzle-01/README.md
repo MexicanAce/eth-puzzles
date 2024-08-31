@@ -16,7 +16,7 @@ As you look down and unfold the note, it reads:
 
 On the back of the note, it reads:
 
-> `decoder()` @ [0xa3C8C4ED919Ad50e06c0B52a434DEC69DA1fde17](https://sepolia.explorer.zksync.io/address/0xa3C8C4ED919Ad50e06c0B52a434DEC69DA1fde17)
+> `function decoder() returns (string memory)` @ [0xa3C8C4ED919Ad50e06c0B52a434DEC69DA1fde17](https://sepolia.explorer.zksync.io/address/0xa3C8C4ED919Ad50e06c0B52a434DEC69DA1fde17)
 
 <details>
   <summary>Hint</summary>
