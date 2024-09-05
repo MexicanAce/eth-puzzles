@@ -1,11 +1,16 @@
 ## ✈️ ZK Airlines
 
-Hello and welcome to Amazing Race, your premier private jet business for all the
-adventurers in the world!
+> "Hello and welcome to the Amazing Race, the extreme challenge gameshow for
+adventurers from around the world!" --Jeff
 
-Your team, the Silver Snakes, is comprised of 4 members, including yourself.
+You and your team of 4 (including you) line up at the starting line, awaiting
+your first challenge.
 
-When you open the envelope, you see the following clues:
+Jeff, the show's host, walks to each team and hands you each a sealed envelope.
+
+> "Get ready, the world is waiting for you. Good luck. Travel safe. Go!"
+
+You rip open the letter and see the following clues:
 
 ## Clue #1
 
