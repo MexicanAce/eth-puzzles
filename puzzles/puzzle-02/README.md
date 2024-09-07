@@ -53,95 +53,38 @@ That's a good question 😅, and here's the general idea...
 Each maze can actually be broken down into a grid of _"squares"_ , where each
 _square_ can have up to 4 edges. Here, let's look at a visual example 🧑‍🏫:
 
-```txt
-     1   2   3   4   5  
-   ·-------------------·
- 1 | O                 |
-   |   :   :   :---:---|
- 2 |   |   |   |       |
-   |   :---:   :   :   |
- 3 |   |       |   |   |
-   |---:   :---:   :   |
- 4 |               |   |
-   |   :---:---:   :   |
- 5 |           |   | X |
-   ·-------------------·
-```
+<img src="diagram-1.png" width="450">
 
 This is a simple 5x5 maze with a start (`O`) and end (`X`) on opposite ends. One
 solution to this maze _could_ be `RRDDLDRRUURDDD`
 
-```txt
-     1   2   3   4   5  
-   ·-------------------·
- 1 | O → · → ·         |
-   |   :   : ↓ :---:---|
- 2 |   |   | · | · → · |
-   |   :---: ↓ : ↑ : ↓ |
- 3 |   | · ← · | · | · |
-   |---: ↓ :---: ↑ : ↓ |
- 4 |     · → · → · | · |
-   |   :---:---:   : ↓ |
- 5 |           |   | X |
-   ·-------------------·
-```
+<img src="diagram-2.png" width="450">
 
 Now let's look at each square in the 1st row a little closer. We can represent
 each square as 4 bits based on the edges it has (or doesn't have) starting at
 the top going clockwise. Some examples:
 
-```
-·---·
-|   | => 1111
-·---·
+<img src="diagram-3.png" width="200">
 
-or
+This means the maze becomes...
 
-·---·
-    | => 1100
-·   ·
-
-or
-
-·   ·
-|     => 0001
-·   ·
-```
-
-This means the first row becomes...
-
-```txt
-       1       2       3       4       5 
-   ·---------------------------------------·
-   |                                       |
- 1 | 1001    1000    1000    1010    1110  |
-   |                                       |
-   |       :       :       :-------:-------|
-```
+<img src="diagram-4.png" width="450">
 
 Then take these 4-bit values and convert them to hexadecimal chars...
 
-```txt
-       1       2       3       4       5 
-   ·---------------------------------------·
-   |                                       |
- 1 |   9       8       8       A       E   |
-   |                                       |
-   |       :       :       :-------:-------|
-```
+<img src="diagram-5.png" width="450">
 
-Apply this to every row, and concatenate the hex chars from left to right, top-down
-you get:
+Concatenate the hex chars from left to right, top-down you get:
 
 ```
-0x988AE575987965592A453AE77
+988AE5759C7965592A453AE77
 ```
 
 HOWEVER, only an even number of characters is considered a valid hexadecimal
-string. So the final encoding is:
+string. So the final hex encoding is:
 
 ```
-0x0988AE575987965592A453AE77
+0x0988AE5759C7965592A453AE77
 ```
 
 ## What are some edgecases to consider?
@@ -162,7 +105,8 @@ return `False`
 <details>
   <summary>Hint #2</summary>
   
-  Always write unit tests to validate your logic. Here's a few Hardhat tests:
+  Always write unit tests to validate your logic. Here's a few Hardhat tests to
+  get you started:
 
   ```typescript
 import { expect } from 'chai';
@@ -179,7 +123,7 @@ describe('MazeFinder', function () {
   
   it("Should return true for valid minimal path", async function () {
     const isValid: boolean = await mazeFinder.isValidPath(
-      "0x0988AE575987965592A453AE77",
+      "0x0988AE5759C7965592A453AE77",
       "RRDDLDRRUURDDD"
     );
     expect(isValid).to.be.true;
@@ -187,7 +131,7 @@ describe('MazeFinder', function () {
   
   it("Should return false if immediately run into a wall", async function () {
     const isValid: boolean = await mazeFinder.isValidPath(
-      "0x0988AE575987965592A453AE77",
+      "0x0988AE5759C7965592A453AE77",
       "U"
     );
     expect(isValid).to.be.false;
@@ -195,7 +139,7 @@ describe('MazeFinder', function () {
   
   it("Should return true for paths that backtrack", async function () {
     const isValid: boolean = await mazeFinder.isValidPath(
-      "0x0988AE575987965592A453AE77",
+      "0x0988AE5759C7965592A453AE77",
       "RRRRLLDDLDRRUURDDD"
     );
     expect(isValid).to.be.true;

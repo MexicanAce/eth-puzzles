@@ -1,4 +1,4 @@
-## ✈️ ZK Airlines
+## ✈️ AmaZKing Race
 
 > "Hello and welcome to the Amazing Race, the extreme challenge gameshow for
 adventurers from around the world!" --Jeff
@@ -21,7 +21,7 @@ You've been split into 2 teams:
 
 ### Team 1
 
-Alice: `0xBC989fDe9e54cAd2aB4392Af6dF60f04873A033A`
+Alice (You): `0xBC989fDe9e54cAd2aB4392Af6dF60f04873A033A`
 
 Bob: `0x55bE1B079b53962746B2e86d12f158a41DF294A6`
 
