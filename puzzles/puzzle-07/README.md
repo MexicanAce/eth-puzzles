@@ -29,7 +29,14 @@ The secret is hidden within a contract on-chain. Once you find the address, call
 
 <br>
 <details>
-  <summary>Hint</summary>
+  <summary>Hint #1</summary>
+  
+  GitHub Markdown will not render `<style>` tags, try previewing this README in
+  an IDE like `VSCode`
+</details>
+
+<details>
+  <summary>Hint #2</summary>
   
 ```json
 "abi": [
