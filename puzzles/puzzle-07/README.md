@@ -3,6 +3,9 @@
 The secret is hidden within a contract on-chain. Once you find the address, call
 `getSecret()` to find your 3-word answer to this puzzle.
 
+> _⚠️ Editor's Note: GitHub Markdown will not render `<style>` tags, try previewing this README in
+  an IDE like `VSCode`_
+
 <div class="lightbulb">
     <svg fill="#000000" height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 320" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_12_" d="M160,0C91.075,0,35,56.075,35,125c0,39.627,18.545,76.425,50,100.005V245v60c0,8.284,6.716,15,15,15h120 c8.284,0,15-6.716,15-15v-60v-19.995c31.455-23.58,50-60.378,50-100.005C285,56.075,228.925,0,160,0z M205,290h-90v-30h90V290z M211.807,204.638c-4.246,2.768-6.807,7.495-6.807,12.564V230h-30v-60h15c8.284,0,15-6.716,15-15s-6.716-15-15-15h-60 c-8.284,0-15,6.716-15,15s6.716,15,15,15h15v60h-30v-12.797c0-5.069-2.561-9.796-6.807-12.564C81.147,187.001,65,157.23,65,125 c0-52.383,42.617-95,95-95s95,42.617,95,95C255,157.23,238.852,187.001,211.807,204.638z"></path> </g></svg>
 </div>
@@ -29,14 +32,7 @@ The secret is hidden within a contract on-chain. Once you find the address, call
 
 <br>
 <details>
-  <summary>Hint #1</summary>
-  
-  GitHub Markdown will not render `<style>` tags, try previewing this README in
-  an IDE like `VSCode`
-</details>
-
-<details>
-  <summary>Hint #2</summary>
+  <summary>Hint</summary>
   
 ```json
 "abi": [
