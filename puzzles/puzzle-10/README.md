@@ -21,9 +21,13 @@ Capt. Bernard Wallace
 
 ---
 
-### Invoice for NFT4Me, Inc.
+### From: `no-reply@nft4me.io`
 
-> *Invoice not rendering? To view this invoice online, visit https://sepolia.explorer.zksync.io/address/0x16A3d5388C57f325DD69035570E2EfBe1af87945*
+### Subject: `INV#1337 - Invoice for NFT4Me, Inc.`
+
+### Email Body
+
+> *Is this email not rendering? View it online, by visiting https://sepolia.explorer.zksync.io/address/0x16A3d5388C57f325DD69035570E2EfBe1af87945#contract#read*
 
 <table>
   <tr>
